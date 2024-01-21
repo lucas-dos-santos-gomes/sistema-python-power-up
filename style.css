@@ -62,26 +62,40 @@ form {
 .btn-box {
   display: flex;
   justify-content: center;
+  gap: 10px;
   padding: 10px 0;
   height: 70px;
 }
 
 button {
+  padding: 10px 25px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
-}
-
-button:hover {
-  border: none;
+  color: #FFF;
+  transition: .1s border;
 }
 
 .blue-btn {
-  padding: 10px 25px;
-  color: #FFF;
   background-color: #3898ec;
   border-right: solid 3px #246399;
   border-bottom: solid 3px #246399;
+}
+
+.blue-btn:hover {
+  border-right: solid 3px #3898ec;
+  border-bottom: solid 3px #3898ec;
+}
+
+.orange-btn {
+  background-color: #ec8c38;
+  border-right: solid 3px #945722;
+  border-bottom: solid 3px #945722;
+}
+
+.orange-btn:hover {
+  border-right: solid 3px #ec8c38;
+  border-bottom: solid 3px #ec8c38;
 }
 
 footer {
