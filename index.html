@@ -6,20 +6,24 @@
   <meta name="authors" content="Lucas dos Santos Gomes">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo-hashtag.webp" type="image/x-icon">
   <title>Login</title>
 </head>
 <body>
-  <h1>Sistema Python Power Up</h1>
-  <h2>Faça seu Login para acessar</h2>
-  <form>
-    <label for="email">E-mail</label>
-    <input type="email" id="email" placeholder="Seu e-mail de login" />
-
-    <label for="password">E-mail</label>
-    <input type="password" id="password" placeholder="Sua senha" />
-
-    <button>Logar</button>
-  </form>
+  <main>
+    <h1>Sistema Python Power Up</h1>
+    <h2>Faça seu Login para acessar</h2>
+    <form>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Seu e-mail de login" required />
+  
+      <label for="password">Senha</label>
+      <input type="password" id="password" placeholder="Sua senha" required />
+  
+      <button class="login">Logar</button>
+    </form>
+  </main>
 </body>
 </html>
