@@ -14,10 +14,6 @@ body {
   max-width: 100vw;
 }
 
-main {
-
-}
-
 h1, h2 {
   text-align: center;
 }
@@ -31,7 +27,7 @@ h2 {
   margin-block: 20px;
 }
 
-label, input, button {
+label, button {
   font-size: 22px;
 }
 
@@ -40,7 +36,11 @@ label {
 }
 
 input {
+  font-size: 18px;
   font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid #303030;
 }
 
 form {
@@ -50,10 +50,15 @@ form {
 }
 
 button {
-  margin: auto;
+  margin: 10px auto 0;
   border-radius: 50px;
+  border: none;
 }
 
 .login {
   padding: 10px 25px;
+  color: #FFF;
+  background-color: #3898ec;
+  border-right: solid 3px #246399;
+  border-bottom: solid 3px #246399;
 }
