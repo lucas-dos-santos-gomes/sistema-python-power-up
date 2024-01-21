@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -14,12 +16,20 @@ body {
   max-width: 100vw;
 }
 
+main {
+  padding: 40px 20px;
+}
+
 h1, h2 {
   text-align: center;
 }
 
 h1 {
   font-size: 36px;
+}
+
+.product-title {
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -49,16 +59,39 @@ form {
   gap: 10px;
 }
 
+.btn-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  height: 70px;
+}
+
 button {
-  margin: 10px auto 0;
   border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
   border: none;
 }
 
-.login {
+.blue-btn {
   padding: 10px 25px;
   color: #FFF;
   background-color: #3898ec;
   border-right: solid 3px #246399;
   border-bottom: solid 3px #246399;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 10px;
+  border-top: 1px solid #817c7c;
+}
+
+img {
+  width: 70px;
 }
