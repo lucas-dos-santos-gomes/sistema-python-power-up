@@ -16,6 +16,10 @@ body {
   max-width: 100vw;
 }
 
+.display_none {
+  display: none;
+}
+
 main {
   padding: 40px 20px;
 }
@@ -67,7 +71,8 @@ form {
   height: 70px;
 }
 
-button {
+button, .orange-btn {
+  font-size: 22px;
   padding: 10px 25px;
   border-radius: 50px;
   border: none;
@@ -96,6 +101,30 @@ button {
 .orange-btn:hover {
   border-right: solid 3px #ec8c38;
   border-bottom: solid 3px #ec8c38;
+}
+
+.table-box {
+  padding: 0 10px 40px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 5px 10px;
+  border: 1px solid #303030;
+}
+
+th {
+  background-color: #3898ec;
+  color: #fff;
+  text-align: center;
+}
+
+thead {
+  background-color: #ccc;
 }
 
 footer {
