@@ -12,6 +12,6 @@ form.onsubmit = e => {
     alert("A senha está incorreta!");
     password.value = "";
   } else {
-    window.location.href = window.origin + "/product-registration.html"
+    window.location.href = window.location.href + "/product-registration.html"
   }
 }
