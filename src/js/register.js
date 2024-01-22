@@ -18,21 +18,10 @@ form.onsubmit = e => {
   table.classList.remove("display_none", tbody.childElementCount > 0);
 }
 
-/*submitBtn.onclick = () => {
-  tr = document.createElement("tr");
-  for(let i = 0; i < inputs.length; i++) {
-    td = document.createElement("td");
-    td.textContent = inputs[i].value;
-    tr.appendChild(td);
-    inputs[i].value = "";
-  }
-  tbody.appendChild(tr);
-  table.classList.remove("display_none", tbody.childElementCount > 0);
-}*/
-
 clearBtn.onclick = () => {
   if(tbody.childElementCount > 0) {
     table.removeChild(table.lastElementChild);
     table.appendChild(document.createElement("tbody"));
+    table.classList.add("display_none");
   }
 }
