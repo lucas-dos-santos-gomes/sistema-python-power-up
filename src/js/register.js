@@ -3,10 +3,10 @@ inputs = document.querySelectorAll("input");
 submitBtn = document.querySelector(".submit");
 clearBtn = document.querySelector(".clear");
 table = document.querySelector("table");
-tbody = table.querySelector("tbody");
 
 form.onsubmit = e => {
   e.preventDefault();
+  tbody = table.querySelector("tbody");
   tr = document.createElement("tr");
   for(let i = 0; i < inputs.length; i++) {
     td = document.createElement("td");
@@ -24,6 +24,7 @@ form.onsubmit = e => {
 }
 
 clearBtn.onclick = () => {
+  tbody = table.querySelector("tbody");
   if(tbody.childElementCount > 0) {
     table.removeChild(table.lastElementChild);
     table.appendChild(document.createElement("tbody"));
