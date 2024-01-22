@@ -12,6 +12,10 @@ form.onsubmit = e => {
     alert("A senha está incorreta!");
     password.value = "";
   } else {
-    window.location.href = window.origin + "/sistema-python-power-up/product-registration.html"
+    if(window.origin == "http://127.0.0.1:5500") {
+      window.location.href = window.origin + "/product-registration.html"
+    } else {
+      window.location.href = window.origin + "/sistema-python-power-up/product-registration.html"
+    }
   }
 }

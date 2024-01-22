@@ -10,7 +10,12 @@ form.onsubmit = e => {
   tr = document.createElement("tr");
   for(let i = 0; i < inputs.length; i++) {
     td = document.createElement("td");
-    td.textContent = inputs[i].value;
+    if(inputs[i].value.length > 0) {
+      td.textContent = inputs[i].value;
+    } else {
+      td.textContent = "--";
+      td.classList.add("center");
+    }
     tr.appendChild(td);
     inputs[i].value = "";
   }
